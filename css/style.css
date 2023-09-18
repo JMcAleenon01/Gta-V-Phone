@@ -1,0 +1,145 @@
+body {
+    min-height: 100vh;
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--LightGrayishBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+}
+
+@media (min-width: 480px) {
+    #testingBG {
+        height: 844px;
+        width: 390px;
+        margin: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: none;
+    }
+
+    footer {
+        width:100%;
+    }
+}
+
+#testingBG {
+    background-image: url('../images/iFruitBG.png');
+    height: 844px;
+}
+
+
+main {
+    min-height: 844px;
+    position: relative;
+}
+
+main .container {
+    height: 654px;
+}
+
+header {
+    color:white;
+    text-align:center;
+    background-image: url('../images/titleBG.png');
+    height: 95px;
+}
+
+header h1{
+    margin: 0;
+    padding: 30px 0;
+    height:36px;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    place-content: space-around;
+}
+
+#home div {
+    display: flex;
+    text-align:center;
+}
+
+section div button:hover {
+    border: 5px solid rgba(255, 255, 255, .68);
+    transform: scale(1.1); 
+}
+
+section div button {
+    width:110px;
+    height:110px;
+    border: 0;
+    align-self:center;
+    margin:10px auto;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Apps Images */
+.email {
+    background-image:url('../images/emails.png');
+}
+
+.text {
+    background-image:url('../images/text.png');
+}
+
+.contacts {
+    background-image:url('../images/contacts.png');
+}
+
+.quickJoin {
+    background-image:url('../images/quick-join.png');
+}
+
+.jobList {
+    background-image:url('../images/job-lists.png');
+}
+
+.settings {
+    background-image:url('../images/settings.png');
+}
+
+.snapomatic {
+    background-image:url('../images/snapomatic.png');
+}
+
+.internet {
+    background-image:url('../images/internet.png');
+}
+
+.securoServ {
+    background-image:url('../images/securoServ.png');
+}
+
+
+footer {
+    display:flex;
+    background-image: url(../images/navBG.png);
+    height: 95px;
+    width: 390px;
+    /* position: absolute;
+    bottom:0; */
+    justify-content: space-evenly;
+}
+
+footer button {
+    width:104px;height: 95px;background:transparent;border:0;margin: 0 auto;
+}
+
+footer button:first-child {
+    width:104px;height: 95px;border:0;margin: 0 auto 0 143px;
+}
+
+footer button img {
+    width:100%;
+}
+
+footer button img:hover {
+    transform: scale(1.3); 
+}

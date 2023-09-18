@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/hoverText.js"></script>
+    <title>GTA Online Phone</title>
+</head>
+<body>
+
+    <div id="testingBG">
+        <main>
+            
+            <header>
+                <h1 id="hoverTitle"></h1>
+            </header>
+            <div class="container">
+                <section id="text" style="display:none;background-color:white;background-color: white;height: 100%;align-items: center;justify-content: center;">
+                    <div style="width:100%;height:100%;display: flex;align-items: center;justify-content: center;">
+                        <h1 style="text-align: center;margin: auto;color:black;">No messages</h1>
+                    </div>
+                </section>
+                <section id="home">
+                    <div>
+                        <button class="email" onmouseover="hoverText('Emails')" onclick="changeScreen('email')"></button>
+                        <button class="text" onmouseover="hoverText('Texts')" onclick="changeScreen('texts')"></button>
+                        <button class="contacts" onmouseover="hoverText('Contacts')" onclick="changeScreen('contacts')"></button>
+                    </div>
+                    <div>
+                        <button class="quickJoin" onmouseover="hoverText('Quick Join')" onclick="changeScreen('quickJoin')"></button>
+                        <button class="jobList" onmouseover="hoverText('Joblist')" onclick="changeScreen('jobLists')"></button>
+                        <button class="settings" onmouseover="hoverText('Settings')" onclick="changeScreen('settings')"></button>
+                    </div>
+                    <div>
+                        <button class="snapomatic" onmouseover="hoverText('Snapomatic')" onclick="changeScreen('snapomatic')"></button>
+                        <button class="internet" onmouseover="hoverText('Internet')" onclick="changeScreen('internet')"></button>
+                        <button class="securoServ" onmouseover="hoverText('SecuroServ')" onclick="changeScreen('securoServ')"></button>
+                    </div>
+                </section>
+            </div>
+            <footer>
+                <button><img src="images/plus.png" alt=""></button>
+                <button><img src="images/arrow.png" alt="" onmouseover="hoverText('Exit')" onclick="changeScreen('exit')"></button>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
